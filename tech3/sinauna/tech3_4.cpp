@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	char stringTest[100];
-	int i, strLength;
+	int strLength;
 	int flag = 0;
 	
 
@@ -20,7 +20,7 @@ int main() {
 	system("pause");
 
 	strLength = strlen(stringTest);
-	for (i = 0; i < strLength; i++) {
+	for (int i = 0; i < strLength; i++) {
 		if (stringTest[i] != stringTest[strLength - i - 1]) {
 			flag = 1;
 			break;
